@@ -24,7 +24,7 @@ function App() {
     form.append("po_b", poB);
 
     try {
-      const resp = await fetch("http://127.0.0.1:8000/compare-pos", {
+      const resp = await fetch("/compare-pos", {
         method: "POST",
         body: form,
       });
